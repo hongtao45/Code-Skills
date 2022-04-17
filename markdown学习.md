@@ -90,9 +90,9 @@ def read_xml(ifn):
 - 插入图片、`![标题](url)` 组合使用（不留空格
 - 快捷点：`Ctrl+Shift+I` 
 
-![images](C:\Users\hongtao45\Desktop\markdown学习.assets\images.jpg)
+![images](C:\Users\hongtao45\Desktop\gitskills\markdown学习.assets\images.jpg)
 
-![images (1)](C:\Users\hongtao45\Desktop\markdown学习.assets\images (1).jpg)
+![images2](C:\Users\hongtao45\Desktop\gitskills\markdown学习.assets\images2.jpg)
 
 ## 列表
 
