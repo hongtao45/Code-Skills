@@ -47,3 +47,49 @@ git push
 ## 流程中会遇到的问题记录
 
 ### `git branch`
+
+- 增 (新建分支)
+
+```bash
+# 创建一个分支
+git branch testing
+
+# 切换到新分支
+git checkout testing
+
+# 上面两步操作合并简写,新建分支,并将本地HEAD切换到新分支上
+git checkout -b testing
+
+# 它是下面两条命令的简写：
+git branch testing
+git checkout testing
+
+# 推送到远端,origin没有什么特殊含义,指定远程仓库,通常默认为origin
+git push origin testing
+
+# 如果远端上的分支名字不一样,我们可以进行本地到远端的映射
+$ git push origin testing:awesomebranch
+```
+
+- 删 (删除分支)
+
+```bash
+git branch -d hotfix
+
+# 分支没有合并,但可以使用大写的D强制删除
+git branch -D hotfix
+```
+
+- 查 (分支状态)
+
+```bash
+# 查看电脑B本地仓库的分支
+git branch
+
+# 查看本地和远程仓库的所有分支
+git branch -a
+
+# 查看远程仓库的分支
+git branch -r
+```
+
