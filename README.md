@@ -46,7 +46,7 @@ git push
 
 ## 流程中会遇到的问题记录
 
-### `git branch`
+### `branch`基本操作
 
 - 增 (新建分支)
 
@@ -93,3 +93,27 @@ git branch -a
 git branch -r
 ```
 
+### 删除远程分支
+
+- 查看远程分支
+
+```bash
+git branch -a
+```
+
+- 删除远程分支
+
+```bash
+git push origin --delete <branchName>
+
+# 推送一个空分支到远程分支，其实就相当于删除远程分支
+git push origin :dbg_lichen_star
+```
+
+### 退到指定状态，再新建分支
+
+1. 找到需要分支的节点，然后git checkout `<commit id>`，将HEAD指过去。
+2. 此时`HEAD`为游离状态`（’detached HEAD‘）`。
+3. 创建分支，并切换，`git checkout -b <branch name>`。在分支上修改，操作。
+4. `push`到远程仓库，`git push origin <branch name>`完成
+5. `git push origin dev`，这条命令表示把本地`dev`分支提交到远程仓库，**即创建了远程分支`dev`**
