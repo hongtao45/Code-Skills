@@ -90,9 +90,9 @@ def read_xml(ifn):
 - 插入图片、`![标题](url)` 组合使用（不留空格
 - 快捷点：`Ctrl+Shift+I` 
 
-![images](figure/images.jpg)
+![images](./figure/images.jpg)
 
-![images2](figure/images2.jpg)
+![images2](./figure/images2.jpg)
 
 ## 列表
 
