@@ -194,8 +194,7 @@ $$
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 [![Last Commit](https://img.shields.io/github/last-commit/hongtao45/Git-MarkDown-Skills/master?label=&style=for-the-badge)](https://github.com/hongtao45/Git-MarkDown-Skills/commits "Commit History")
 
-[![Last Commit](https://img.shields.io/github/last-commit/hongtao45/Git-MarkDown-Skills/master?label=&style=plastic)](https://github.com/hongtao45/Git-MarkDown-Skills/commits/main "Commit History")
+[![Last Commit](https://img.shields.io/github/last-commit/hongtao45/Git-MarkDown-Skills/main?label=&style=plastic)](https://github.com/hongtao45/Git-MarkDown-Skills/commits/main "Commit History")
 
