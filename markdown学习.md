@@ -151,7 +151,7 @@ $$
 
 ## 插入链接
 
-- 使用`[ ]( )` 显示内容+ 链接（和插入图片的格式是一样的
+- 使用`[ ]( )` 显示内容+ 链接（和插入图片的格式l类似，少了一个感叹号
 - 快捷键： ` Ctrl + K`
 - [Git Bash 命令行 配置](https://achuan-2.github.io/posts/be43.html)
 
@@ -181,8 +181,14 @@ $$
 
 
 
-## 插入小图标
+## GitHub徽标
 
-![npm bundle size](https://img.shields.io/bundlephobia/min/Git-MarkDown-Skills?style=plastic)
+> GitHub徽标，GitHub Badge，也可以叫它徽章
+>
+> 在项目README中经常看到的那些表明构建状态或者版本等信息的小图标
+>
+> 使用的网站[Shields.io](https://shields.io/), 例如如下
 
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/Git-MarkDown-Skills?style=plastic)
+![AppVeyor](https://img.shields.io/appveyor/build/hongtao45/Git-MarkDown-Skills?style=plastic)
+
+![AUR last modified](https://img.shields.io/aur/last-modified/Git-MarkDown-Skills?style=plastic)
