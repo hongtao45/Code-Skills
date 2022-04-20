@@ -120,6 +120,8 @@ git push origin :dbg_lichen_star
 
 # Git Bash常用基本指令
 
+- [常用的基本指令](https://www.jianshu.com/p/2ccdfd59e215)
+
 ```bash
 pwd #查看当前目录（pwd）
 cd  #切换目录（cd 想要切换到的目录名称
@@ -144,5 +146,14 @@ wc -l #报告行数（wc -l 文件名称）
 wc -c #报告字节数（wc -c 文件名称）
 wc -m # 报告字符数（wc -m 文件名称）
 wc -w #报告单词数（wc -w 文件名称）
+```
+
+
+
+- 获取帮助信息
+
+```bash
+# 指令 --help
+ls --help
 ```
 
