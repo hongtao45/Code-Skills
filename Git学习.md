@@ -115,3 +115,34 @@ git push origin :dbg_lichen_star
 3. 创建分支，并切换，`git checkout -b <branch name>`。在分支上修改，操作。
 4. `push`到远程仓库，`git push origin <branch name>`完成
 5. `git push origin dev`，这条命令表示把本地`dev`分支提交到远程仓库，**即创建了远程分支`dev`**
+
+
+
+# Git Bash常用基本指令
+
+```bash
+pwd #查看当前目录（pwd）
+cd  #切换目录（cd 想要切换到的目录名称
+ls  #查看当前目录下的内容（ls     ls -al          ls -l）
+
+mkdir #创建目录（mkdir 目录名称）
+touch #创建文件（touch 文件名称.html/txt（注意：文件需要带后缀名））
+
+clear #清空（clear）
+
+cat：查看文件全部内容（cat index.html）
+
+rm #删除文件（rm index.html）
+rm -rf #把选择的文件夹下所有的文件删除（rm -rf 文件夹名称）
+mv # 移动文件或重命名（mv 想要移动的文件 想要移动到的路径）
+ （mv 想要重命名的文件 想要重命名的文件的名称）
+
+cp #复制文件（cp 想要复制的文件 想要复制到的路径）
+
+wc #字数信息统计（wc 文件名称）
+wc -l #报告行数（wc -l 文件名称）
+wc -c #报告字节数（wc -c 文件名称）
+wc -m # 报告字符数（wc -m 文件名称）
+wc -w #报告单词数（wc -w 文件名称）
+```
+
