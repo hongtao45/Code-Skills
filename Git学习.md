@@ -141,32 +141,30 @@ git push origin :dbg_lichen_star
      ```bash
       git checkout .
      ```
-   
-     
 
 2. 本地**新增了**一些文件 (并没有 `git add` 到暂存区)，想放弃修改
 
-  - 单个文件/文件夹：
+   - 单个文件/文件夹：
 
-    ```bash
-    rm  -rf filename
-    ```
+     ```bash
+     rm  -rf filename
+     ```
 
-  - 所有文件：
+   - 所有文件：
 
-    ```bash
-    git clean -xdf
-    ```
+     ```bash
+     git clean -xdf
+     ```
 
-    > 删除新增的文件，如果文件已经已经 git add 到暂存区，并不会删除！
+     > 删除新增的文件，如果文件已经已经 git add 到暂存区，并不会删除！
 
-  - 所有文件和文件夹：
+   - 所有文件和文件夹：
   
-    ```bash
-    git clean -xdff
-    ```
+     ```bash
+     git clean -xdff
+     ```
   
-    >  [谨慎操作] 本命令删除新增的文件和文件夹，如果文件已经已经 git a dd 到暂存区，并不会删除！
+     >  [谨慎操作] 本命令删除新增的文件和文件夹，如果文件已经已经 git a dd 到暂存区，并不会删除！
 
 
 
@@ -175,7 +173,7 @@ git push origin :dbg_lichen_star
    - 单个文件/文件夹：
 
      ```bash
-     git reset HEAD filename
+      git reset HEAD filename
      ```
    
    - 所有文件/文件夹：
@@ -184,30 +182,28 @@ git push origin :dbg_lichen_star
        git reset HEAD .
        ```
    
-   
-   
 4. 本地通过 `git add` 和 `git commit` 后，想要撤销此次 commit
 
-  - 撤销 commit, 同时保留该 commit 修改：
+   - 撤销 commit, 同时保留该 commit 修改：
 
-    ```bash
-    git reset last_commit_id
-    ```
+     ```bash
+     git reset last_commit_id
+     ```
 
-    >
-    > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前 6 位。
-    >
-    > 撤销之后，你所做的已经 commit 的修改还在工作区！
+     >
+     > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前 6 位。
+     >
+     > 撤销之后，你所做的已经 commit 的修改还在工作区！
 
-  - 撤销 `commit`, 同时本地删除该 `commit` 修改：
+   - 撤销 `commit`, 同时本地删除该 `commit` 修改：
 
-    ```bash
-    git reset --hard last_commit_id
-    ```
+     ```bash
+     git reset --hard last_commit_id
+     ```
 
-    > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前6位
-    >
-    > [谨慎操作] 撤销之后，你所做的已经 commit 的修改将会清除，仍在工作区/暂存区的代码也将会清除！
+     > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前6位
+     >
+     > [谨慎操作] 撤销之后，你所做的已经 commit 的修改将会清除，仍在工作区/暂存区的代码也将会清除！
 
 
 
