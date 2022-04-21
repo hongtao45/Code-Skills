@@ -133,7 +133,7 @@ git push origin :dbg_lichen_star
    - 单个文件/文件夹：
 
      ```bash
-      git checkout -- filename
+      git checkout filename
      ```
 
    - 所有文件/文件夹：
@@ -175,7 +175,7 @@ git push origin :dbg_lichen_star
    - 单个文件/文件夹：
 
      ```bash
-       git reset HEAD filename
+     git reset HEAD filename
      ```
    
    - 所有文件/文件夹：
@@ -191,7 +191,7 @@ git push origin :dbg_lichen_star
   - 撤销 commit, 同时保留该 commit 修改：
 
     ```bash
-    git reset commit_id
+    git reset last_commit_id
     ```
 
     >
@@ -202,7 +202,7 @@ git push origin :dbg_lichen_star
   - 撤销 `commit`, 同时本地删除该 `commit` 修改：
 
     ```bash
-    git reset --hard commit_id
+    git reset --hard last_commit_id
     ```
 
     > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前6位
