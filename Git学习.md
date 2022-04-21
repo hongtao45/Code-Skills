@@ -42,6 +42,8 @@ git commit -m ' '
 git push
 ```
 
+
+
 ## 流程中会遇到的问题记录
 
 ### `branch`基本操作
@@ -111,10 +113,101 @@ git push origin :dbg_lichen_star
 ### 退到指定状态，再新建分支
 
 1. 找到需要分支的节点，然后git checkout `<commit id>`，将HEAD指过去。
+
 2. 此时`HEAD`为游离状态`（’detached HEAD‘）`。
+
 3. 创建分支，并切换，`git checkout -b <branch name>`。在分支上修改，操作。
+
 4. `push`到远程仓库，`git push origin <branch name>`完成
+
 5. `git push origin dev`，这条命令表示把本地`dev`分支提交到远程仓库，**即创建了远程分支`dev`**
+
+   
+
+## git 放弃修改/增加文件操作
+
+> [git 放弃修改，放弃增加文件操作](https://blog.csdn.net/ustccw/article/details/79068547)
+
+1. 本地**修改了**一些文件 (并没有使用 `git add` 到暂存区)，想放弃修改
+
+   - 单个文件/文件夹：
+
+     ```bash
+      git checkout -- filename
+     ```
+
+   - 所有文件/文件夹：
+
+     ```bash
+      git checkout .
+     ```
+   
+     
+
+2. 本地**新增了**一些文件 (并没有 `git add` 到暂存区)，想放弃修改
+
+  - 单个文件/文件夹：
+
+    ```bash
+    rm  -rf filename
+    ```
+
+  - 所有文件：
+
+    ```bash
+    git clean -xdf
+    ```
+
+    > 删除新增的文件，如果文件已经已经 git add 到暂存区，并不会删除！
+
+  - 所有文件和文件夹：
+  
+    ```bash
+    git clean -xdff
+    ```
+  
+    >  [谨慎操作] 本命令删除新增的文件和文件夹，如果文件已经已经 git a dd 到暂存区，并不会删除！
+
+
+
+3. 本地**修改/新增了**一些文件，**已经** `git add` 到暂存区，想放弃修改
+
+   - 单个文件/文件夹：
+
+     ```bash
+       git reset HEAD filename
+     ```
+   
+   - 所有文件/文件夹：
+   
+       ```bash
+       git reset HEAD .
+       ```
+   
+   
+   
+4. 本地通过 `git add` 和 `git commit` 后，想要撤销此次 commit
+
+  - 撤销 commit, 同时保留该 commit 修改：
+
+    ```bash
+    git reset commit_id
+    ```
+
+    >
+    > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前 6 位。
+    >
+    > 撤销之后，你所做的已经 commit 的修改还在工作区！
+
+  - 撤销 `commit`, 同时本地删除该 `commit` 修改：
+
+    ```bash
+    git reset --hard commit_id
+    ```
+
+    > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前6位
+    >
+    > [谨慎操作] 撤销之后，你所做的已经 commit 的修改将会清除，仍在工作区/暂存区的代码也将会清除！
 
 
 
