@@ -4,7 +4,7 @@
 
 >流程1：
 >
->​	先初始化本地git，再把git提交成远程分支
+>先初始化本地git，再把git提交成远程分支
 
 - 初始化一个`git`，初始完`git`后，如果你是`Windows`用户，你会在目录里看到一个`.git`文件夹，这就说明本地初始化`git`成功了，然后输入
 
@@ -41,8 +41,6 @@ git add .
 git commit -m ' '
 git push
 ```
-
-
 
 ## 流程中会遇到的问题记录
 
@@ -122,7 +120,7 @@ git push origin :dbg_lichen_star
 
 5. `git push origin dev`，这条命令表示把本地`dev`分支提交到远程仓库，**即创建了远程分支`dev`**
 
-   
+
 
 ## git 放弃修改/增加文件操作
 
@@ -159,11 +157,11 @@ git push origin :dbg_lichen_star
      > 删除新增的文件，如果文件已经已经 git add 到暂存区，并不会删除！
 
    - 所有文件和文件夹：
-  
+   
      ```bash
      git clean -xdff
      ```
-  
+   
      >  [谨慎操作] 本命令删除新增的文件和文件夹，如果文件已经已经 git a dd 到暂存区，并不会删除！
 
 
@@ -204,6 +202,8 @@ git push origin :dbg_lichen_star
      > 这个 commit_id 是你想要回到的那个节点，可以通过 git log 查看，可以只选前6位
      >
      > [谨慎操作] 撤销之后，你所做的已经 commit 的修改将会清除，仍在工作区/暂存区的代码也将会清除！
+
+---
 
 
 
