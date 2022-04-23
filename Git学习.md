@@ -27,7 +27,7 @@ git commit -m "first commit"
 
 - 添加完远程仓库分支后，接下来就是提交这个分支了：
 ```bash
-git remote add origin https://github.com/nongshuqiner/-git-.git
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
 git push -u origin master
 ```
 
