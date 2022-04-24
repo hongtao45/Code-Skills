@@ -63,19 +63,18 @@
     - options 保存解析成功的参数， dict
     - args 保存没有解析成功的参数， list
 
-    
 
 ### 使用示例
 
 ```python 
-# test.py
+# optparse_test.py
 
 import optparse
 
 def get_optparse(args=None):
     useage= 'show something helpfull -- for example: how to use this program'
-
     optParser = optparse.OptionParser(useage)
+
     optParser.add_option("-f", "--file", dest='filename', 
                         help="read picture from File", metavar="FILE", action="store", type="string")
 
@@ -99,12 +98,10 @@ if __name__ == '__main__':
     print(options)
 ```
 
-
-
 - 如上代码，可以通过如下调用，然后得到具体的结果
 
   ```python
-  python test.py -f hello.py -s False
+  python optparse_test.py -f hello.py -s False
   # 
   hello.py
   False
@@ -112,15 +109,13 @@ if __name__ == '__main__':
   {'filename': 'hello.py', 'save_mode': False, 'random': False}
   ```
 
-- action 为 store_true/store_false时，任意传 或 不传就有 有对应action_的参数
+- action 为 store_true/store_false时，任意传 或 不传就有 有对应action_*的参数
 
   ```python
-  python test.py -f hello.py -s -r 31
+  python optparse_test.py -f hello.py -s -r 31
   #  
   hello.py
   False
   True
   {'filename': 'hello.py', 'save_mode': False, 'random': True}}
   ```
-
-  
