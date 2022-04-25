@@ -14,8 +14,8 @@
    >Git Bash命令行基本命令
   
 3. [XML文档读写](./003_XML文档读写.md) [[Demo]](./code/XML_test.py)
-   
-  > 使用`xml.etree.ElementTree as ET`读写XML文档
+  
+   > 使用`xml.etree.ElementTree as ET`读写XML文档
   
 4. [`optparse`模块使用学习](./004_optparse模块学习.md) [[Demo]](./code/optparse_test.py)
    >基本语法
