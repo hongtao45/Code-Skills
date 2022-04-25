@@ -6,31 +6,23 @@
 本项目记录了，学习Python过程中，遇到的有关的问题：
 
 1. [MarkDown 学习](./001_markdown学习.md) 
-  
-  >基本语法
-  >
-  >本仓库的整理，学习markdown和熟悉Git语法
+   >基本语法
+   >本仓库的整理，学习markdown和熟悉Git语法
   
 2. [Git 学习](./002_Git学习.md)
-  
-  >Git 命令与GitHub配合使用
-  >
-  >Git Bash命令行基本命令
+   >Git 命令与GitHub配合使用
+   >Git Bash命令行基本命令
   
 3. [XML文档读写](./003_XML文档读写.md) [[Demo]](./code/XML_test.py)
-  
+   
   > 使用`xml.etree.ElementTree as ET`读写XML文档
   
 4. [`optparse`模块使用学习](./004_optparse模块学习.md) [[Demo]](./code/optparse_test.py)
-
-  >基本语法
-  >
-  >使用方法
+   >基本语法
+   >使用方法
 
 5. [SUMO软件使用学习.md](./005_SUMO软件使用学习.md) [[Demo]]()
-
    > 基本语法
-   >
    > 完整的流程
 
 6. 
