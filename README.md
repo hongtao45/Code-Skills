@@ -18,12 +18,19 @@
    > 使用`xml.etree.ElementTree as ET`读写XML文档
   
 4. [`optparse`模块使用学习](./004_optparse模块学习.md) [[Demo]](./code/optparse_test.py)
+   
    >基本语法
    >使用方法
-
-5. [SUMO软件使用学习.md](./005_SUMO软件使用学习.md) [[Demo]]()
+   
+5. [SUMO软件使用学习](./005_SUMO软件使用学习.md) [[Demo]]()
+  
    > 基本语法
    > 完整的流程
+   
+6. [pypinyin模块学习](./006_pypinyin模块学习.md)
 
-6. 
+   > from pypinyin import pinyin, Style
 
+
+
+7. 
