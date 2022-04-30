@@ -18,7 +18,7 @@
    > 使用`xml.etree.ElementTree as ET`读写XML文档
   
 4. [`optparse`模块使用学习](./004_optparse模块学习.md) [[Demo]](./code/optparse_test.py)
-   
+  
    >基本语法
    >使用方法
    
@@ -30,7 +30,13 @@
 6. [pypinyin模块学习](./006_pypinyin模块学习.md)
 
    > from pypinyin import pinyin, Style
+   >
+   > 汉字转拼音的使用
 
+7. [python函数中args和kwargs](./007_python函数中args和kwargs.md)
 
+   > \* 和\**的用法
+   >
+   > args和kwargs函数中的应用
 
 7. 
