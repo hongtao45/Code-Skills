@@ -198,3 +198,26 @@ $$
 [![Last Commit](https://img.shields.io/github/last-commit/hongtao45/Git-MarkDown-Skills/main?label=&style=plastic)](https://github.com/hongtao45/Git-MarkDown-Skills/commits/main "Commit History")
 
 [![Last Commit](https://img.shields.io/github/last-commit/hongtao45/Git-MarkDown-Skills/main?label=&style=plastic)](https://github.com/hongtao45/Git-MarkDown-Skills/commits/main)
+
+
+
+## 表情符号
+
+Emoji 支持表情符号，你可以用系统默认的 Emoji 符号。
+
+输入方式
+
+1. 输入 `:` 将会出现智能提示`:smile:`![img](https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8)
+2. 直接输入法选入
+3. 快捷键后点选：
+   - Mac: control+command+space点选
+   - Window:使用 Win键+. 或者Win键+. 点选
+
+不同方式输入的emoji可能最后渲染的会不一样😄，影响不大
+
+```markdown
+:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile:  :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger:
+```
+
+![img](https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f606.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f635.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f630.png?v8)![img](https://github.githubassets.com/images/icons/emoji/unicode/1f605.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f624.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/263a.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f629.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f44f.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f514.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f381.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/2753.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f4a3.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f300.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f647.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f48b.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f4a6.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f4a9.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/2757.png?v8) ![img](https://github.githubassets.com/images/icons/emoji/unicode/1f4a2.png?v8)
+
