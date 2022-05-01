@@ -44,19 +44,46 @@
 ### 使用示例
 - 调用traci的一个完整的流程
     ```python 
+    import traci
+    import sumolib
     
+    sm = sumolib.checkBinary('sumo-gui')
+            
+            traci.start([sm, '-c', sumocfg_file])
+            while traci.simulation.getMinExpectedNumber() > 0:
+                traci.simulationStep()
+    
+            traci.close()
     ```
-
-- 如上代码，可以通过如下调用，然后得到具体的结果
-
-  ```python
-  
-  ```
-  
+    
 - python中，调用命令行来使用sumo 生成*.sumocfg等文件
 
   ```python
-  
+  def start_sumo(rou_file, autoSim=True):
+      '''
+      生成sumocfg文件
+      自动打开运行sumo-gui
+      '''
+      sumocfg_file = rou_file.split(sep='.')[0] + '.sumocfg'
+      sumo = sumolib.checkBinary('sumo')
+      opts = [sumo,
+              "-n", 'map.net.xml', 
+              "-r",  rou_file,
+              "-a", "map.add.xml",
+              '--gui-settings-file','map.view.xml',
+              "-e", "7200",
+              "--step-length", "1",
+              "--save-configuration", sumocfg_file,
+              "--threads", "2",
+              "--no-warnings", "true",
+              "--start", 'true',
+              "--duration-log.statistics",
+              "--device.rerouting.adaptation-interval", "10",
+              "--device.rerouting.adaptation-steps", "18",
+              "-v", "--no-step-log",  
+              "--ignore-route-errors", "true",
+              "--collision.action", "none",]
+      subprocess.call(opts)
   ```
 
 
