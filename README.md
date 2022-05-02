@@ -31,7 +31,7 @@
 
 6. [pypinyin模块学习](./006_pypinyin模块学习.md)
 
-   > from pypinyin import pinyin, Style
+   > from pypinyin import pinyin, Style, lazy_pinyin
    >
    > 汉字转拼音的使用
 
