@@ -52,9 +52,60 @@ print(pinyin('朝阳'))
 [['zhāo'], ['yáng']]
 ```
 
+
+**一行代码，获取里面所有的读音**
+
+```python 
+from pypinyin import pinyin
+res = pinyin('朝阳')
+
+flattened_res = [item for sublist in res for item in sublist]
+print(flattened_res)
+```
+
+运行结果：
+
+```text
+['zhāo', 'yáng']
+```
+
+**拓展**：假设我们有这样的一个列表
+
+```text
+l = [[1, 2, 3], [4, 5], [6], [7, 8], [9]]
+```
+
+而我们最终希望列表能够是
+
+```text
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+我们可以这么来做
+
+```python
+flattened_list = [item for sublist in l for item in sublist]
+print(flattened_list)
+```
+
+output
+
+```text
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+
+
+作者：Python 木语
+链接：https://zhuanlan.zhihu.com/p/461030390
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
 好吧，它只给出来了一个读音，但是如果我们想要另外一种读音咋办呢？
 
-其实很简单，只需添加 heteronym 参数并设置为 True 就好了，我们试下：
+其实很简单，只需添加 `heteronym` 参数并设置为 True 就好了，我们试下：
 
 ```text
 from pypinyin import pinyin
