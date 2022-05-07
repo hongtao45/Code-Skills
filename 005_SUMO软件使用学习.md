@@ -88,6 +88,30 @@
 
 
 
+## sumolib
+
+寻找最短路
+
+> [sumolib.net](https://sumo.dlr.de/pydoc/sumolib.net.html)
+
+```python
+import traci, sumolib
+net = sumolib.net.readNet('map.net.xml')
+
+beginEdge =  "897570589"
+endEdge = "331158296#2"
+
+endEdge = net.getEdge(endEdge)
+beginEdge = net.getEdge(beginEdge)
+
+routeTuple = net.getShortestPath(beginEdge, endEdge)[0]
+route = [edg.getID() for edg in routeTuple]
+
+print(route)
+```
+
+
+
 # SUMO完整的案例
 
 参考：[SUMO完整的案例](http://www.bimant.com/blog/sumo-traffic-simulation/)
