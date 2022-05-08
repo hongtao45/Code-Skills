@@ -6,9 +6,10 @@
 本项目记录了，学习Python过程中，遇到的有关的问题：
 
 1. [MarkDown 学习](./001_markdown学习.md) 
+  
    >基本语法
    >本仓库的整理，学习markdown和熟悉Git语法
-
+   
 2. [Git 学习](./002_Git学习.md)
    >Git 命令与GitHub配合使用
    >Git Bash命令行基本命令
@@ -52,5 +53,17 @@
    > 字符串打印输出时数字格式化
    >
    > str.format()函数的使用
+
+10. [010_sys模块学习.md](./010_sys模块学习.md)
+
+   > python 中的sys模块
+   >
+   > 
+
+11. [011_np.random随机数学习](./011_np.random随机数学习.md)
+
+   > numpy的随机数模块学习
+   >
+   > 
 
 10. 
