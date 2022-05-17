@@ -77,4 +77,10 @@
     >
     > 利用SUMO来绘制三参数关系图
 
+13. [013_Pandas中loc和iloc和isin函数用法](./013_Pandas中loc和iloc和isin函数用法.md)
+
+    > pandas 的loc[] 和iloc[] 函数
+    >
+    > 获取包含特定元素的行 insin()
+
 12. 
