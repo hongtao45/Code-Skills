@@ -106,3 +106,50 @@
     ```
 
 ## 高级字典
+
+- 获取不存在的值
+
+  ```python	
+  my_dict = {'a': 1, 'b': 2, 'c': 3}
+  
+  # 不推荐
+  if 'g' in my_dict:
+      value = my_dict['g']
+  else:
+      value = 'some default value'
+  print(value)
+  # 推荐
+  value = my_dict.get('g', 'some default value')
+  print(value)
+  
+  value = my_dict.get('g')
+  print(value is None) # 会返回None
+  
+  # 或者这样
+  my_dict = {'a': 1, 'b': 2, 'c': 3}
+  
+  key = 'g'
+  value = my_dict.setdefault(key, 'some default value')
+  
+  print(value)
+  print(my_dict)
+  ```
+
+- 新建字典
+
+  ```python
+  # 推荐
+  my_dict = {k: v for k, v in zip(keys, values)}
+  print(my_dict)
+  
+  # 推荐:
+  my_dict2 = dict(zip(keys, values))
+  
+  assert my_dict2 == my_dict
+  
+  # 推荐
+  for key, val in my_dict.items():
+      print('key: {:15s} value: {}'.format(key, val))
+  ```
+
+  
