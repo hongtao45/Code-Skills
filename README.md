@@ -63,7 +63,7 @@
 
     > python 中的sys模块
     >
-    > 
+    > 发现了一个还不错的博客：[python sys - 刘江的博客教程](https://www.liujiangblog.com/course/python/54)
 
 11. [np.random随机数学习](./011_np.random随机数学习.md)
 
